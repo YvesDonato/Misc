@@ -16,6 +16,26 @@
     p{
         text-align: center;
     }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .List{
+        padding: 60px
+    }
 </style>
 
 <head>
@@ -67,10 +87,20 @@
     </div>
 
     <div class="Timer">
-    <h2>Countdown until the money is payed:
+    <h2>Countdown until payday:
     </h2>
     <h4 id="demo"></h4>
-    <h3>Money owned: 240$</h3>
+    <div class="dropdown">
+    <span>Money owned: 240$</span>
+    <div class="dropdown-content">
+        <p>Non negotiable</p>
+        <p>First of every month at 12 am </p>
+        </div>
+    </div>
+    </div>
+    <div class="List">
+    <h3>What i'll get with this money</h3>
+    <p1> - Graphics Card</p1>
     </div>
 
 </body>
